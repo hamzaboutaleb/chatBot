@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Chatbot</title>
+    <link rel="stylesheet" href={{url_for('static', filename='css/style.css')}} />
+    <script src={{url_for('static', filename='js/home.js')}} defer></script>
+  </head>
+  <body>
+    <div class="page_container">
+      <header class="home_page">
+        <h1 class="logo_home">ChatBot</h1>
+        <ul>
+          <li>Welcome Back, Nezha</li>
+          <li>
+            <a href={{url_for("logout")}}>Log out</a>
+          </li>
+        </ul>
+      </header>
+      <section class="chatbot">
+        <div class="chatbot_head">
+          <h2>Chatting with bot</h2>
+        </div>
+        <div class="chatbox" id="chatbox">
+          <!-- <div class="bot">
+            <img class="bot_img" src="img/bot_avatar.png" alt="" />
+            <div class="bot_msg">Lorem, ipsum dolor sit amet consectetur</div>
+          </div>
+          <div class="user">
+            <div class="user_msg">Hey</div>
+            <img class="bot_img" src="img/profile_avatar.png" alt="" />
+          </div> -->
+        </div>
+        <form id="chatbot_form" action="">
+          <input type="text" autocomplete="off" class="message" name="message"/>
+          <input type="submit" class="send_msg" value="Send" />
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

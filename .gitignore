@@ -1,0 +1,5 @@
+intents.json
+*.pickle
+intents.json
+*.db
+/chat_model

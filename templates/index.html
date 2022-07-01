@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatBot</title>
+    <link rel="stylesheet" href={{ url_for('static', filename='css/style.css')
+    }} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src={{ url_for('static', filename="js/script.js") }} defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">ChatBot</h1>
+    </header>
+    <div class="container">
+      <div class="form-links">
+        <a href="#" class="login">Login</a>
+        <a href="#" class="register">Register</a>
+      </div>
+      <div id="login-form" class="hidden">
+        <h2 class="form-title">Login to your account</h2>
+        <form id="login" action="" method="post">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" />
+          </div>
+          <div class="form-group">
+            <label for="password_login">Password</label>
+            <input type="password" name="password" id="password_login" />
+          </div>
+          <input type="submit" class="form_submit" value="Login" />
+        </form>
+        <div class="login-links">
+          <a class="forgot-password" href="#">Forgot Password ?</a>
+        </div>
+      </div>
+      <div id="register-form">
+        <h2 class="form-title">Create new Account</h2>
+        <form id="register" action="" method="post">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <input type="submit" class="form_submit" value="New Account" />
+        </form>
+      </div>
+    </div>
+    <!-- <div class="modal">
+      <div class="error">Password Wrong</div>
+    </div> -->
+  </body>
+</html>
